@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:minHeight="@dimen/list_item_height"
+    android:background="@color/tan_background"
+    android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="@dimen/list_item_height"
+            android:layout_height="@dimen/list_item_height"
+            android:id="@+id/imageicon"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/list_item_height"
+            android:id="@+id/text_container"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/imageicon"
+            android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    tools:text="lutti"
+                    android:layout_centerVertical="true"
+
+                    android:id="@+id/text1"
+                    android:layout_marginTop="20dp"
+                    android:gravity="bottom"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+                <TextView
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_below="@id/text1"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/text2"
+                    android:gravity="top"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@android:color/background_dark"
+                    tools:text="one"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/playicon"
+                android:paddingRight="16dp"
+                android:src="@drawable/ic_play_arrow_white_24dp"/>
+</LinearLayout>
